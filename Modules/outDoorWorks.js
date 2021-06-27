@@ -5,7 +5,7 @@ module.exports = {
 };
 
 function sportOutdoorWorksHandler(req,res){
-let outDoorUrl='https://sports.api.decathlon.com/groups';
+let outDoorUrl='https://sports.api.decathlon.com/sports';
 axios
 .get(outDoorUrl)
 .then((result)=>{
@@ -13,7 +13,7 @@ axios
     const outdoorArray=result.data.data.map((item)=>{
         return new Outdoor(item);
     });
-    console.log(outdoorArray);
+    // console.log(outdoorArray);
     res.send(outdoorArray);
 })
 .catch((err) => {
@@ -22,9 +22,10 @@ axios
 }
 class Outdoor{
     constructor(item){
-        this.description=item.attributes.description;
         this.name=item.attributes.name;
-        this.slug=item.attributes.slug;
-        // this.groups=item.relationships.
+        this.description=item.attributes.description;
+        this.icon=item.attributes.icon;
+        // this.groups=item.relationships.children.data;
+        this.imageArr=item.relationships.images.data;
     }
 }
