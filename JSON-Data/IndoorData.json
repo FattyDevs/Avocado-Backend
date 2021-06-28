@@ -6,8 +6,9 @@
         {
             "id": 174,
             "name": "Abductor Machine",
+            "link": "https://www.youtube.com/watch?v=HOWkftR1AWM",
             "uuid": "99881bdd-43d7-4c3b-82ed-9c187d0455b7",
-            "description": "in eine aufrechte Position setzen, bei der die Beine hüftbreit geöffnet sind, den Rücken, die Knie und die Oberschenkelaußenseite an die jeweiligen Polster pressen, mit den Händen an den Griffen festhalten, die Oberschenkel bis zum Anschlagpunkt der Hebelarme auseinander drücken, danach die Beine wieder zusammen führen, das Gesäß nicht vom Sitz abheben,beim Auseinanderdrücken der Hebelarme aus- und beim Zusammenführen einatmen\n",
+            "description": "sit in an upright position with the legs hip-width apart, press the back, knees and outer thighs against the respective pads, hold on to the handles with the hands, push the thighs apart to the point where the lever arms stop, then bring the legs back together, do not lift the buttocks off the seat, exhale when pushing the lever arms apart and inhale when bringing them together.",
             "creation_date": "2013-07-19",
             "category": {
                 "id": 9,
@@ -58,8 +59,9 @@
         {
             "id": 5,
             "name": "Walking lunges",
+            "link": "https://www.youtube.com/watch?v=L8fvypPrzzs",
             "uuid": "5675ae61-6597-4806-ae5c-2dda5a5ac03c",
-            "description": "",
+            "description": "Walking lunges are a variation on the static lunge exercise. Instead of standing back upright after performing a lunge on one leg, as you would in a static bodyweight lunge, you “walk” forward by lunging out with the other leg.",
             "creation_date": "2013-05-05",
             "category": {
                 "id": 9,
@@ -135,9 +137,10 @@
         },
         {
             "id": 135,
-            "name": "Lunge triceps press over",
+            "name": "Triceps press over",
+            "link": "https://www.youtube.com/watch?v=5crTU1JiMfU",
             "uuid": "c8d08cbd-d406-4ce0-b1b9-10b236272d30",
-            "description": "",
+            "description": "Grip the bar with palms facing downwards, about shoulder width apart. Keeping your elbows close to your body, take a slight forward lean, and exhale as you push the bar down till your arms full extended. When doing this, focus on just using your triceps to push the bar down whilst keeping your shoulders and arms still.",
             "creation_date": "2013-05-05",
             "category": {
                 "id": 8,
@@ -173,8 +176,9 @@
         {
             "id": 677,
             "name": "Axe Hold",
+            "link": "https://www.youtube.com/watch?v=7477NZAo-eI",
             "uuid": "8e9d8968-323d-468c-9174-8cf11a105fad",
-            "description": "Nehmen Sie die Hanteln und strecken Sie die Arme zur Seite. Halten Sie sie so lange wie möglich.",
+            "description": "Take the dumbbells and stretch your arms to the side. Hold them as long as possible.",
             "creation_date": "2020-01-16",
             "category": {
                 "id": 8,
@@ -205,42 +209,9 @@
             "variations": []
         },
         {
-            "id": 289,
-            "name": "Axe Hold",
-            "uuid": "6add5973-86d0-4543-928a-6bb8b3f34efc",
-            "description": "Grab dumbbells and extend arms to side and hold as long as you can",
-            "creation_date": "2014-11-02",
-            "category": {
-                "id": 8,
-                "name": "Arms"
-            },
-            "muscles": [],
-            "muscles_secondary": [],
-            "equipment": [
-                {
-                    "id": 3,
-                    "name": "Dumbbell"
-                }
-            ],
-            "language": {
-                "id": 2,
-                "short_name": "en",
-                "full_name": "English"
-            },
-            "license": {
-                "id": 1,
-                "full_name": " Creative Commons Attribution Share Alike 3",
-                "short_name": "CC-BY-SA 3",
-                "url": "https://creativecommons.org/licenses/by-sa/3.0/deed.en"
-            },
-            "license_author": "GrosseHund",
-            "images": [{"image":"https://prehabexercises.com/wp-content/uploads/2017/11/PreHab-Exercises-Chop-and-Lift-Grips-e1511739379555.png"}],
-            "comments": [],
-            "variations": []
-        },
-        {
             "id": 637,
             "name": "Back Squat",
+            "link": "https://www.youtube.com/watch?v=ultWZbUMPL8",
             "uuid": "0fd6154d-fb53-4b24-acc0-1c5c05b57ebc",
             "description": "Place a barbell in a rack just below shoulder-height. Dip under the bar to put it behind the neck across the top of the back, and grip the bar with the hands wider than shoulder-width apart. Lift the chest up and squeeze the shoulder blades together to keep the straight back throughout the entire movement. Stand up to bring the bar off the rack and step backwards, then place the feet so that they are a little wider than shoulder-width apart. Sit back into hips and keep the back straight and the chest up, squatting down so the hips are below the knees. From the bottom of the squat, press feet into the ground and push hips forward to return to the top of the standing position.",
             "creation_date": "2019-05-29",
@@ -344,8 +315,9 @@
         {
             "id": 77,
             "name": "Dumbell Bench Press",
+            "link": "https://www.youtube.com/watch?v=SHsUIZiNdeY",
             "uuid": "06450bcb-03a8-4bd7-8349-ef677ee57ea3",
-            "description": "Der Bewegungsablauf ist ähnlich zur Übung mit einer Langhantel. Nehme die Gewichte in die Hände und lege dich auf die Bank. Halte die Hanteln neben der Brust auf Brustwarzenhöhe und drücke sie nun nach oben, bis die Arme ausgestreckt sind. Lasse die Gewichte nun langsam und kontrolliert runter.",
+            "description": "The movement is similar to the exercise with a barbell. Take the weights in your hands and lie down on the bench. Hold the dumbbells next to your chest at nipple height and now press them up until your arms are extended. Now lower the weights slowly and in a controlled manner.",
             "creation_date": "2013-05-05",
             "category": {
                 "id": 11,
@@ -425,8 +397,9 @@
         {
             "id": 15,
             "name": "Bench Press",
+            "link": "https://www.youtube.com/watch?v=rT7DgCr-3pg",
             "uuid": "198dcb2e-e35f-4b69-ae8b-e1124d438eae",
-            "description": "Lege dich auf die Bank, die Stange direkt über die Augen, die Knie etwas angewinkelt und die Füße fest auf dem Boden. Greife die Stange breit und lasse sie langsam und kontrolliert runter, dabei sollte die Stange kurz auf Brustwarzenhöhe den Körper berühren. Dann das Gewicht wieder hochdrücken bis die Arme durchgestreckt sind. Bei hohem Gewicht, empfielt sich natürlich einen Spotter zu haben, der einen hilft falls man die Stange nicht alleine hochdrücken kann. Mit der Breite des Griffs kann außerdem kontrolliert werden, welcher Bereich der Brust stärker belastet wird: breiter Griff: äußere Brustmuskeln. enger Griff: innere Brustmuskeln und Trizeps\n",
+            "description": "Lie on the bench with the bar directly over your eyes, knees slightly bent and feet firmly on the floor. Grasp the bar wide and lower it slowly and controlled, the bar should briefly touch the body at nipple level. Then push the weight back up until the arms are fully extended. If the weight is heavy, it is recommended to have a spotter to help you if you can't push the bar up on your own. With the width of the grip can also be controlled, which area of the chest is loaded more: wide grip: outer pectoral muscles. narrow grip: inner pectoral muscles and triceps.",
             "creation_date": "2013-05-05",
             "category": {
                 "id": 11,
@@ -511,6 +484,7 @@
         {
             "id": 343,
             "name": "Barbell Ab Rollout",
+            "link": "https://i.ytimg.com/an_webp/yBg4UoOXxLo/mqdefault_6s.webp?du=3000&sqp=CIaV5oYG&rs=AOn4CLA5gzMutDQg84Mmuk4nrMZ7e3ZAEg",
             "uuid": "1b9dc5bc-790b-4e21-a55d-f8b3115e94c5",
             "description": "Place a barbell on the floor at your feet. Bending at the waist, grip the barbell with a shoulder with overhand grip. With a slow controlled motion, roll the bar out so that your back is straight. Roll back up raising your hips and butt as you return to the starting position.",
             "creation_date": "2015-07-27",
@@ -553,8 +527,9 @@
         {
             "id": 407,
             "name": "Barbell Hack Squats",
+            "link": "https://www.youtube.com/watch?v=KDFzmSLDN0s",
             "uuid": "1215dad0-b7e0-42c6-80d4-112f69acb68a",
-            "description": "Perform leg squats with barbell behind your legs",
+            "description": "The barbell hack squat is an old school strength exercise that's been used for decades by bodybuilders and fitness enthusiasts alike to build strength in the quads, glutes, and hamstrings. It also tends to be much more low-back friendly as the load is under the center of mass rather than in front.",
             "creation_date": "2016-07-30",
             "category": {
                 "id": 9,
@@ -616,6 +591,7 @@
         {
             "id": 405,
             "name": "Barbell Lunges",
+            "link": "https://www.youtube.com/watch?v=ci4rsmlOk24",
             "uuid": "ae6a6c23-4616-49b7-a152-49d7461c2b7f",
             "description": "Put barbell on the back of your shoulders. Stand upright, then take the first step forward. Step should bring you forward so that your supporting legs knee can touch the floor. Then stand back up and repeat with the other leg. Remember to keep good posture.",
             "creation_date": "2016-07-30",
@@ -670,6 +646,7 @@
         {
             "id": 759,
             "name": "Barbell Reverse Wrist Curl",
+            "link": "https://www.youtube.com/watch?v=FW7URAaC-vE",
             "uuid": "95b25f5e-4a01-48f1-a3df-2b7fe8fd624d",
             "description": "Sitting on a bench, grab a barbell with your palms facing down and your hands shoulder-width apart. Rest your forearms on your thighs and allow your wrists to hang over your knees. Curl your knuckles towards your face, lifting the barbell. Pause for a moment in the top position, then slowly return the barbell to the starting position.",
             "creation_date": "2020-04-01",
@@ -708,6 +685,7 @@
         {
             "id": 344,
             "name": "Barbell Triceps Extension",
+            "link": "https://www.youtube.com/watch?v=4re6CJ0XNF8",
             "uuid": "2cd5e256-20a7-4bc8-a7a8-d62bf8ce00cf",
             "description": "Position barbell overhead with narrow overhand grip. Lower forearm behind upper arm with elbows remaining overhead. Extend forearm overhead. Lower and repeat.",
             "creation_date": "2015-07-27",
