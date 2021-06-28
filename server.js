@@ -16,6 +16,15 @@ let PORT = process.env.PORT ||3010;
     sportOutdoorWorksHandler,
   } = require('./Modules/outDoorWorks');
 
+  const {
+    sportIndoorWorksHandler,
+  } = require('./Modules/inDoorWorks');
+
+//http:localhost:3010
+app.get("/", homeHandler);
+function homeHandler(req, res) {
+  res.send("Welcome in Home Route");
+}
 const userSchema = require('./Modules/UsersScheema')
 // localhost:3010/
 app.get('/', userSchema.home);
@@ -25,6 +34,9 @@ app.post('/newUser',userSchema.usersInfo);
 
 //http:localhost:3010/outdoor_workouts
 app.get("/outdoor_workouts",sportOutdoorWorksHandler);
+
+//http:localhost:3010/indoor_workouts
+app.get("/indoor_workouts", sportIndoorWorksHandler);
 
 
 app.listen(process.env.PORT || 3010, () => {
