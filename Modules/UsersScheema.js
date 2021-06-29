@@ -55,7 +55,7 @@ home.usersInfo=(req,res)=>{
 console.log("Users Data ", users);
 home.home =(req, res)=>{
     
-        console.log(users);
+        console.log("previous function",users);
         res.status(200).send(users);
 }
 
@@ -70,31 +70,38 @@ home.addSportClass=(req,res)=>{
     console.log(clss);
     console.log(email);
     // seedUser(name,email,clsses)
-    console.log("User ", User.email);
-   const user=users.filter(user=>{
-       if (uesr.email==email){
-        return user 
-       }
-    })
-console.log(user);
-    // users.filter({email:email},function(err,userData){
-    //   if(err){
-    //       console.log('error');
-    //   }
-    //   else
-    //   { 
-      
-      
-    //   userData[clss]=clss;}
-    //   .({
+    console.log("User inside function ", users);
+//    const user=users.filter(user=>{
+//        if (user.email==email){
+//         return user 
+//        }
+//     })
+// console.log(user);
 
-    //        clss:clss,
-    //        email:email,
-    //          }) 
-    //        userData[0].save();
-    //       res.send(userData[0].sports)
-    //       // console.log(userData[0]);
-    //   }
-//   })
+// user[clss]=clss;
+// user.save();
+console.log(users);
+    users.filter({email:email},function(err,userData){
+      if(err){
+          console.log('error');
+      }
+      else
+      { 
+      
+      
+      userData[clss]=clss;
+      console.log(userData);
+    }
+    //   ({
+
+//     //        clss:clss,
+//     //        email:email,
+//     //          }) 
+//     //        userData[0].save();
+//     //       res.send(userData[0].sports)
+//     //       // console.log(userData[0]);
+//     //   }
+// //   })
+    });
 }
   module.exports =home;
