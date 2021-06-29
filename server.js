@@ -3,6 +3,7 @@ require("dotenv").config();
 const express = require("express");
 const app = express();
 const cors = require("cors");
+
 // const mongoose = require("mongoose");
 app.use(express.json());
 app.use(cors());
@@ -23,10 +24,10 @@ let PORT = process.env.PORT ||3010;
 
 
 //http:localhost:3010
-app.get("/", homeHandler);
-function homeHandler(req, res) {
-  res.send("Welcome in Home Route");
-}
+// app.get("/", homeHandler);
+// function homeHandler(req, res) {
+//   res.send("Welcome in Home Route");
+// }
 const userSchema = require('./Modules/UsersScheema')
 // localhost:3010/
 app.get('/', userSchema.home);
@@ -51,65 +52,44 @@ app.get("/indoor_workouts", sportIndoorWorksHandler);
 
 
 
-//http://localhost:3010/sportClass
-app.post('/sportClass',addSportClass);
+//http://localhost:3010/test
+app.post('/newClass',userSchema.addSportClass);
 
-const mongoose = require('mongoose');
-mongoose.connect("mongodb://localhost:27017/sportClass", {useNewUrlParser: true, useUnifiedTopology: true});
 
-const sportClassSchema = new mongoose.Schema({
-  name: String,
-  clsses: String,
-  email:String,
+// const mongoose = require('mongoose');
+// mongoose.connect("mongodb://localhost:27017/sportClass", {useNewUrlParser: true, useUnifiedTopology: true});
+
+// const sportClassSchema = new mongoose.Schema({
+//   name: String,
+//   clsses: String,
+//   email:String,
   
-});
-const UserSchema = new mongoose.Schema({
-  email: String,
-  sports: [sportClassSchema]
-});
-const sportClassModal = mongoose.model('Sport', sportClassSchema);
-const userSportClassModal = mongoose.model('userSport', UserSchema);
+// });
 
-function seedUser(){
-  const userEmail = new userSportClassModal({
-      email : "asailik1993@gmail.com",
-      sports:[
-        {
-          name: "roaa",
-          clsses: "clsses",
-          email:"asailik1993@gmail.com",
-       }
-       ]
-    })
-    userEmail.save()
-  }
-  seedUser()
+// const UserSchema = new mongoose.Schema({
+//   email: String,
+//   sports: [sportClassSchema]
+// });
+// const sportClassModal = mongoose.model('Sport', sportClassSchema);
+// const userSportClassModal = mongoose.model('userSport', UserSchema);
+
+// function seedUser(){
+//   const userEmail = new userSportClassModal({
+//       email : "asailik1993@gmail.com",
+//       sports:[
+//         {
+//           name: "roaa",
+//           clsses: "clsses",
+//           email:"asailik1993@gmail.com",
+//        }
+//        ]
+//     })
+//     userEmail.save()
+//   }
+  // seedUser()
 
 // console.log(userSportClassModal);
-function addSportClass(req,res){
-  const {name, email,clsses}=req.body;
-  // consol.log("userData[0]")
-  // seedUser(name,email,clsses)
- 
-  userSportClassModal.find({email:'asailik1993@gmail.com'},function(err,userData){
-    if(err){
-        console.log('error');
-    }
-    else
-    { 
-    
-    
-    userData[0].sports.push({
-         name:name,
-         clsses:clsses,
-         email:email,
-           }) 
-         userData[0].save();
-        res.send(userData[0].sports)
-        // console.log(userData[0]);
-    }
-})
-}
+
 
 
 
