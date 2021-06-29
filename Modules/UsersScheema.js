@@ -15,7 +15,7 @@ const userSchema = new mongoose.Schema({
     height: Number,
     weight: Number,
     favSport: String,
-    clss:String,
+    clss: String ,
 
 });
 
@@ -26,7 +26,7 @@ const users=[];
 
 home.usersInfo=(req,res)=>{
 
-    console.log("inside saving function");
+    // console.log("inside saving function");
     const {name, email, height, weight, age, favSport}= req.body;
     const newUser= new User({
         name: name,
@@ -36,26 +36,26 @@ home.usersInfo=(req,res)=>{
         weight: Number(weight),
         favSport:favSport
     });
-    console.log(newUser);
+    // console.log(newUser);
     try{
    
     users.push(newUser); 
     newUser.save();
     res.status(200).send(users);
-    console.log(newUser);
+    // console.log(newUser);
   
    
-    console.log("pass");
+    // console.log("pass");
  }
     catch (err) {
         res.status(500).send(`${err}: ERROR IN CHECKING USER DATA`);
-        console.log("catch");
+        // console.log("catch");
     }
 };
-console.log("Users Data ", users);
+// console.log("Users Data ", users);
 home.home =(req, res)=>{
     
-        console.log(users);
+        // console.log(users);
         res.status(200).send(users);
 }
 
@@ -70,31 +70,23 @@ home.addSportClass=(req,res)=>{
     console.log(clss);
     console.log(email);
     // seedUser(name,email,clsses)
-    console.log("User ", User.email);
-   const user=users.filter(user=>{
-       if (uesr.email==email){
-        return user 
-       }
-    })
+    console.log("User ", users);
+   const user=users.find(userObj=>userObj.email==email);
 console.log(user);
-    // users.filter({email:email},function(err,userData){
-    //   if(err){
-    //       console.log('error');
-    //   }
-    //   else
-    //   { 
+    
       
+      if(user == undefined){
+          console.log("ERROR");
+      }else{
+        console.log("inside else");
+        user.clss=String(clss);
+        console.log(user);
+    //  console.log(user);
       
-    //   userData[clss]=clss;}
-    //   .({
-
-    //        clss:clss,
-    //        email:email,
-    //          }) 
-    //        userData[0].save();
-    //       res.send(userData[0].sports)
-    //       // console.log(userData[0]);
-    //   }
-//   })
+      user.save(user);
+     console.log(users);
+     res.status(200).send(console.log(user));
+    }
+   
 }
   module.exports =home;
