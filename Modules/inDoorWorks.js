@@ -23,6 +23,7 @@ class Indoor{
         this.image = item.images[0].image,
         this.link = item.link
     }
+
 }
 
 
