@@ -4,14 +4,14 @@ const express = require("express");
 const cors = require("cors");
 
 const server = express();
-server.use(cors());
-server.use(express.json());
+app.use(cors());
+app.use(express.json());
 
 const PORT = 3010;
 
-server.post("/addFood",addFavFood)
-server.get('/getfood',getfood)
-server.delete('/deleteFood/:index',deltedFood);
+app.post("/addFood",addFavFood)
+app.get('/getfood',getfood)
+app.delete('/deleteFood/:index',deltedFood);
 // mongoose.connect("mongodb://localhost:27017", {
 //     useNewUrlParser: true,
 //     useUnifiedTopology: true,
@@ -158,7 +158,7 @@ function deltedFood(req,res){
   })
 }
 
-server.listen(3010, () => {
+app.listen(3010, () => {
   console.log(`Listening on PORT ${PORT}`);
 });
 
