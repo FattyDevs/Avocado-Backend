@@ -21,10 +21,11 @@ let PORT = process.env.PORT ||3010;
   } = require('./Modules/inDoorWorks');
 
 //http:localhost:3010
-app.get("/", homeHandler);
-function homeHandler(req, res) {
-  res.send("Welcome in Home Route");
-}
+// app.get("/", homeHandler);
+// function homeHandler(req, res) {
+//   res.send("Welcome in Home Route");
+// }
+
 const userSchema = require('./Modules/UsersScheema')
 // localhost:3010/
 app.get('/', userSchema.home);
