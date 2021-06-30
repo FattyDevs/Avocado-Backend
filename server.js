@@ -187,7 +187,7 @@ app.get('/', userSchema.home);
 app.post('/newUser',userSchema.usersInfo);
 
 
-
+// app.get('/comData', userSchema.getComponentsData);
 
 //http:localhost:3010/outdoor_workouts
 // app.get("/outdoor_workouts",sportOutdoorWorksHandler);
