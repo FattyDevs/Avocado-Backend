@@ -69,9 +69,9 @@ else
 
     const index=Number(req.params.index);
     console.log(index)
-    console.log(users)
-    console.log(users[0].foods)
-    const user=users.find((obj)=>email==obj.email)
+    // console.log(users)
+    // console.log(users[0].foods)
+    const user=users.find((obj)=>Object.values(email)==obj.email)
     console.log(user)
 
    
@@ -87,6 +87,7 @@ else
         })
         user.foods=newData;
         user.save(user);
+        console.log('after',user)
         res.send(user)
     }
 }
