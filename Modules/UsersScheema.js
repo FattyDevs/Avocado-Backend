@@ -15,7 +15,7 @@ const userSchema = new mongoose.Schema({
     height: Number,
     weight: Number,
     favSport: String,
-    clss: String ,
+    clss: [{clss:"String"},] ,
 
 });
 
@@ -79,7 +79,7 @@ console.log(user);
           console.log("ERROR");
       }else{
         console.log("inside else");
-        user.clss=String(clss);
+        user.clss=user.clss.push(String(clss));
         console.log(user);
     //  console.log(user);
       
@@ -89,4 +89,10 @@ console.log(user);
     }
    
 }
+
+'/comData'
+
+
+
+
   module.exports =home;
