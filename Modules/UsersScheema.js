@@ -70,26 +70,12 @@ else
     const index=Number(req.params.index);
     console.log(index)
     console.log(users)
-    // console.log(users[0].foods)
-    const user=users.find((obj)=>obj.email==email)
-    console.log(user.name)
-    // users.find({ email: email },function(err, data){        
-    //     if (err){            
-    //         res.status(400);            
-    //         console.log("Error");        
-    //     }else{            
-    //         const newFood= data.foods.filter((food)=> food.index != index);            
-    //         // console.log(data[0]);                       
-    //         data.foods=newFoods;            
-    //         data.save();                       
-    //          console.log(`after delete ${data}`);            
-    //          // res.status(200).send(data[0].books);            r
-    //          res.status(200);        
-    //         };   
-    //          });
+    console.log(users[0].foods)
+    const user=users.find((obj)=>email==obj.email)
+    console.log(user)
 
-    // const user=users.find((obj)=>email==obj.email)
-    // console.log(user)
+   
+    
     if(user.foods==undefined){
         console.log('error');
         // res.send('error')
@@ -101,7 +87,7 @@ else
         })
         user.foods=newData;
         user.save(user);
-        res.send(user.foods)
+        res.send(user)
     }
 }
 
