@@ -8,6 +8,15 @@ mongoose.connect('mongodb://localhost:27017/test', {useNewUrlParser: true, useUn
 
 const home={};
 
+const favFoodSchema = new mongoose.Schema({
+      label: String,
+      image: String,
+      url: String,
+      yields:String,
+      calories: String,
+      mealType :String,
+    });
+
 const userSchema = new mongoose.Schema({
     name: String,
     email: String,
@@ -16,13 +25,89 @@ const userSchema = new mongoose.Schema({
     weight: Number,
     favSport: String,
     clss: [{clss:"String"},] ,
-
+    foods: [favFoodSchema]
 });
 
 const User = mongoose.model('user', userSchema);
 
-
+const favFoodModal = mongoose.model('Food', favFoodSchema);
 const users=[];
+home.addFavFood=(req,res)=>{
+    // console.log('string')
+    const {label,email,image,url,yields,calories,mealType}=req.body;
+    // console.log(label)
+    // console.log(users)
+    // // consol.log("userData[0]")
+    // console.log(users.foods)
+    const user=users.find((obj)=>email==obj.email)
+    // console.log(user)
+   
+  if(user==undefined){
+    console.log('error');
+}
+else
+{ 
+    user.foods.push({
+           label:String(label),
+           image:String(image),
+           url:String(url),
+           yields:String(yields),
+           calories:String(calories),
+           mealType:String(mealType),
+
+        
+       }) 
+    user.save(user);
+   
+    res.status(200).send(user.foods)
+
+}
+  }
+  home.deltedFood=(req,res)=>{
+    const email=req.query;
+    console.log(email)
+
+    const index=Number(req.params.index);
+    console.log(index)
+    console.log(users)
+    // console.log(users[0].foods)
+    const user=users.find((obj)=>obj.email==email)
+    console.log(user.name)
+    // users.find({ email: email },function(err, data){        
+    //     if (err){            
+    //         res.status(400);            
+    //         console.log("Error");        
+    //     }else{            
+    //         const newFood= data.foods.filter((food)=> food.index != index);            
+    //         // console.log(data[0]);                       
+    //         data.foods=newFoods;            
+    //         data.save();                       
+    //          console.log(`after delete ${data}`);            
+    //          // res.status(200).send(data[0].books);            r
+    //          res.status(200);        
+    //         };   
+    //          });
+
+    // const user=users.find((obj)=>email==obj.email)
+    // console.log(user)
+    if(user.foods==undefined){
+        console.log('error');
+        // res.send('error')
+    }else{
+        const newData=user.foods.filter((food,idx)=>{
+            if(idx !== index){
+               return food;
+            }
+        })
+        user.foods=newData;
+        user.save(user);
+        res.send(user.foods)
+    }
+}
+
+    
+
+
 
 home.usersInfo=(req,res)=>{
 
