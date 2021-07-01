@@ -66,12 +66,16 @@ home.deltedFood = (req, res) => {
 
     const index = Number(req.params.index);
     console.log(index)
-    console.log(users)
+    // console.log(users)
     // console.log(users[0].foods)
-    const user = users.find((obj) => obj.email == email)
-    console.log(user.name)
 
-    if (user.foods == undefined) {
+    const user=users.find((obj)=>Object.values(email)==obj.email)
+    console.log(user)
+
+   
+    
+    if(user.foods==undefined){
+
         console.log('error');
         // res.send('error')
     } else {
@@ -82,7 +86,8 @@ home.deltedFood = (req, res) => {
         })
         user.foods = newData;
         user.save(user);
-        res.send(user.foods)
+        console.log('after',user)
+        res.send(user)
     }
 }
 
