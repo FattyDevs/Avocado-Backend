@@ -205,6 +205,9 @@ app.get("/indoor_workouts", sportIndoorWorksHandler);
 
 //http://localhost:3010/test
 app.post('/newClass',userSchema.addSportClass);
+app.listen(process.env.PORT || 3010, () => {
+  console.log(`Listening on PORT ${PORT}`);
+});
 
 
 // const mongoose = require('mongoose');
@@ -269,9 +272,7 @@ app.post('/newClass',userSchema.addSportClass);
 // }
 
 
-app.listen(process.env.PORT || 3010, () => {
-    console.log(`Listening on PORT ${PORT}`);
-  });
+
 
 
 
