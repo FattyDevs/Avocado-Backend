@@ -178,7 +178,7 @@
             "name": "Axe Hold",
             "link": "https://www.youtube.com/watch?v=7477NZAo-eI",
             "uuid": "8e9d8968-323d-468c-9174-8cf11a105fad",
-            "description": "Take the dumbbells and stretch your arms to the side. Hold them as long as possible.",
+            "description": "Hold a handle connected to a cable from the bottom of the machine while your arms are extended. Then standup while you twist your hip as if you are chopping an axe with a tree, then retreat to the original position, then repeat.",
             "creation_date": "2020-01-16",
             "category": {
                 "id": 8,
@@ -204,7 +204,7 @@
                 "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en"
             },
             "license_author": "Wunschcoach",
-            "images": [{"image":"https://musclefibre.in/wp-content/uploads/2020/03/Overhead-Triceps-Extension.jpg"}],
+            "images": [{"image":"https://i.pinimg.com/originals/c8/15/eb/c815ebb830ba2c661bea01d6b891796a.png"}],
             "comments": [],
             "variations": []
         },
@@ -213,7 +213,7 @@
             "name": "Back Squat",
             "link": "https://www.youtube.com/watch?v=ultWZbUMPL8",
             "uuid": "0fd6154d-fb53-4b24-acc0-1c5c05b57ebc",
-            "description": "Place a barbell in a rack just below shoulder-height. Dip under the bar to put it behind the neck across the top of the back, and grip the bar with the hands wider than shoulder-width apart. Lift the chest up and squeeze the shoulder blades together to keep the straight back throughout the entire movement. Stand up to bring the bar off the rack and step backwards, then place the feet so that they are a little wider than shoulder-width apart. Sit back into hips and keep the back straight and the chest up, squatting down so the hips are below the knees. From the bottom of the squat, press feet into the ground and push hips forward to return to the top of the standing position.",
+            "description": "The Back Squat is a lower-body exercise that strengthens the glutes, hamstrings and quads. It's often referred to as “the king of all exercises” due to its ability to build strength, power and size. ... When done improperly, the Back Squat can be highly dangerous and increase your susceptibility to a knee or back injury.",
             "creation_date": "2019-05-29",
             "category": {
                 "id": 9,
@@ -242,7 +242,7 @@
             "id": 38,
             "name": "Bench Press Tight",
             "uuid": "4def60e7-ed8d-4a9d-bf76-ceb15ecf9779",
-            "description": "Lege dich auf die Bank, die Stange direkt über die Augen, die Knie etwas angewinkelt und die Füße fest auf dem Boden. Greife nun die Stange mit einem engen Griff (nicht mehr als 20cm.). Führe nun das Gewicht so weit nach unten, bis die Oberarme paralell zum Boden sind, gehe dann wieder nach obern. Bringe die Stange nicht wie beim (breiten) Bankdrücken auf Brusthöhe runter, sondern weiter unten. Auf der tiefsten Stelle sollten deine Arme einen rechten Winkel machen.",
+            "description": "Lie on the bench with the bar directly over your eyes, knees slightly bent and feet firmly on the floor. Now grasp the bar with a tight grip (no more than 20cm.). Now bring the weight down until the upper arms are parallel to the floor, then go back up. Don't bring the bar down to chest level as in the (wide) bench press, but further down. At the lowest point your arms should make a right angle.",
             "creation_date": "2013-05-05",
             "category": {
                 "id": 8,
@@ -399,7 +399,7 @@
             "name": "Bench Press",
             "link": "https://www.youtube.com/watch?v=rT7DgCr-3pg",
             "uuid": "198dcb2e-e35f-4b69-ae8b-e1124d438eae",
-            "description": "Lie on the bench with the bar directly over your eyes, knees slightly bent and feet firmly on the floor. Grasp the bar wide and lower it slowly and controlled, the bar should briefly touch the body at nipple level. Then push the weight back up until the arms are fully extended. If the weight is heavy, it is recommended to have a spotter to help you if you can't push the bar up on your own. With the width of the grip can also be controlled, which area of the chest is loaded more: wide grip: outer pectoral muscles. narrow grip: inner pectoral muscles and triceps.",
+            "description": "The bench press, or chest press, is an upper-body weight training exercise in which the trainee presses a weight upwards while lying on a weight training bench. The exercise uses the pectoralis major, the anterior deltoids, and the triceps, among other stabilizing muscles.",
             "creation_date": "2013-05-05",
             "category": {
                 "id": 11,
@@ -737,6 +737,69 @@
             },
             "license_author": "sevae",
             "images": [{"image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShSPhQXj3w3h2MqVXepqTLytToMYVG2rVYNHppM306Mzo8S_MvcZYLUuLZH9pDCG0-8t0&usqp=CAU"}],
+            "comments": [],
+            "variations": [
+                344,
+                274,
+                89,
+                90
+            ]
+        },
+        {
+            "id": 344,
+            "name": "Shoulder Press",
+            "link": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-tBZrZvey_8rkyXQ1gi9bQ5Ifwg2bxSsztEDa2-v3RbPs0euoUFIX4pjz6JtzXT7r5cY&usqp=CAU",
+            "uuid": "2cd5e256-20a7-4bc8-a7a8-d62bf8ce00cf",
+            "description": "The overhead press (abbreviated OHP), also referred to as a shoulder press, military press, or simply the press, is a weight training exercise with many variations. ... The exercise helps build muscular shoulders with bigger arms, and is one of the most difficult compound upper-body exercises.",
+            "creation_date": "2015-07-27",
+            "category": {
+                "id": 8,
+                "name": "Shoulder"
+            },
+            "muscles": [
+                {
+                    "id": 5,
+                    "name": "Triceps brachii",
+                    "is_front": false,
+                    "image_url_main": "/static/images/muscles/main/muscle-5.svg",
+                    "image_url_secondary": "/static/images/muscles/secondary/muscle-5.svg"
+                }
+            ],
+            "muscles_secondary": [
+                {
+                    "id": 2,
+                    "name": "Anterior deltoid",
+                    "is_front": true,
+                    "image_url_main": "/static/images/muscles/main/muscle-2.svg",
+                    "image_url_secondary": "/static/images/muscles/secondary/muscle-2.svg"
+                },
+                {
+                    "id": 4,
+                    "name": "Pectoralis major",
+                    "is_front": true,
+                    "image_url_main": "/static/images/muscles/main/muscle-4.svg",
+                    "image_url_secondary": "/static/images/muscles/secondary/muscle-4.svg"
+                }
+            ],
+            "equipment": [
+                {
+                    "id": 1,
+                    "name": "Barbell"
+                }
+            ],
+            "language": {
+                "id": 2,
+                "short_name": "en",
+                "full_name": "English"
+            },
+            "license": {
+                "id": 2,
+                "full_name": "Creative Commons Attribution Share Alike 4",
+                "short_name": "CC-BY-SA 4",
+                "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.en"
+            },
+            "license_author": "sevae",
+            "images": [{"image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-tBZrZvey_8rkyXQ1gi9bQ5Ifwg2bxSsztEDa2-v3RbPs0euoUFIX4pjz6JtzXT7r5cY&usqp=CAU"}],
             "comments": [],
             "variations": [
                 344,
